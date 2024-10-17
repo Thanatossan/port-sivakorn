@@ -94,7 +94,7 @@ const INFO = {
 				"Hand-Signed Language translator, this also have machine learning model to classified and translate hand-signed language ",
 			logo: "flutter.svg",
 			linkText: "View Final Project",
-			link: "https://project.cpe.eng.cmu.ac.th/projectDetail/549",
+			link: "https://project.cpe.eng.cmu.ac.th/492/poster/600610772-2563_2thai_sign_language_translation_system_in_mobile_application.pdf",
 		},
 	],
 	sideProject: [
