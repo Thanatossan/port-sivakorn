@@ -2,9 +2,7 @@
 
 .homepage-article {
 	width: 90%;
-	mix-blend-mode: normal;
 	border-radius: 20px;
-	opacity: 0.8;
 }
 
 .homepage-article:hover {
@@ -19,15 +17,15 @@
 
 .homepage-article-date {
 	opacity: 1;
-	color: var(--tertiary-color);
-	font-size: 12px;
+	color: var(--secondary-color);
+	font-size: 15px;
 	margin-bottom: 1em;
 }
 
 .homepage-article-title {
 	opacity: 1;
 	color: var(--primary-color);
-	font-size: 16px;
+	font-size: 20;
 	margin-bottom: 1em;
 	font-weight: 700;
 }
@@ -35,7 +33,7 @@
 .homepage-article-description {
 	opacity: 1;
 	color: var(--secondary-color);
-	font-size: 12px;
+	font-size: 18px;
 	line-height: 1.5;
 }
 

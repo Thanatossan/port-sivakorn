@@ -1,11 +1,10 @@
 import React from "react";
 
-function article_1() {
+function education() {
 	return {
-		date: "7 May 2023",
-		title: "The Benefits of Cloud Computing",
-		description:
-			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+		date: "2021-2023",
+		title: "Master of Biomedical Enginering",
+		description: "Chiang Mai University",
 		keywords: [
 			"The Benefits of Cloud Computing",
 			"Tharindu",
@@ -39,12 +38,11 @@ function article_1() {
 	};
 }
 
-function article_2() {
+function education_2() {
 	return {
-		date: "7 May 2023",
-		title: "Artificial Intelligence in Healthcare",
-		description:
-			"AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
+		date: "2017-2021",
+		title: "Bachelor of Computer Engineering",
+		description: "Chiang Mai University",
 		style: ``,
 		keywords: [
 			"Artificial Intelligence in Healthcare",
@@ -60,6 +58,6 @@ function article_2() {
 	};
 }
 
-const myArticles = [article_1, article_2];
+const myArticles = [education, education_2];
 
 export default myArticles;

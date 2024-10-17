@@ -8,7 +8,7 @@ import Article from "../components/articles/article";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
+import myEducation from "../data/articles";
 
 import "./styles/articles.css";
 
@@ -50,7 +50,7 @@ const Articles = () => {
 
 						<div className="articles-container">
 							<div className="articles-wrapper">
-								{myArticles.map((article, index) => (
+								{myEducation.map((article, index) => (
 									<div
 										className="articles-article"
 										key={(index + 1).toString()}

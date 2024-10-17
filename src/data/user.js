@@ -1,24 +1,24 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
+		title: "Sivakorn Wongponkanan",
+		name: "Sivakorn Wongponkanan",
+		email: "mail@sivakorn.koto@gmail.com",
 		logo: "../logo.png",
 	},
 
 	socials: {
 		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
+		github: "https://github.com/Thanatossan",
+		linkedin: "https://www.linkedin.com/in/sivakorn-wongponkanan-9322b520b",
 		instagram: "https://instagram.com/",
 		stackoverflow: "https://stackoverflow.com/",
 		facebook: "https://facebook.com/",
 	},
 
 	homepage: {
-		title: "Full-stack web and mobile app developer, and amateur astronaut.",
+		title: "Flutter & Android Mobile Developer",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+			"I am a frontend developer with expertise in Flutter and Android. I have experience in building mobile application in various knowledge field. Determined and focused to finish what I started. If anything is too challenging , I will collaborate with others to achieve that goal.",
 	},
 
 	about: {
@@ -35,48 +35,103 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "FutureSkill - for Business",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"Learning Application that I have design structure using clean Architecture and Bloc State management.",
+			img: "flutter.svg",
+			logo: "flutter.svg",
+			linkText: "Currently testing phase",
+			link: "https://apps.apple.com/th/app/futureskill-upskill-now/id6468992311",
+		},
+
+		{
+			title: "FutureSkill - UpSkill Now",
+			img: "",
+			description:
+				"Similar to previous application but only implement addtional feature, refactoring and CI/CD of this project.",
+			logo: "flutter.svg",
 			linkText: "View Project",
+			link: "https://apps.apple.com/th/app/futureskill-upskill-now/id6468992311",
+		},
+
+		{
+			title: "Mandala: Drone Portal",
+			description:
+				"Drone Management Application using Stacked as State Management",
+			logo: "flutter.svg",
+			linkText: "Currently testing phase",
 			link: "https://github.com",
 		},
 
 		{
-			title: "Project 2",
+			title: "AiANG DRONE",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+				"Agriculture Drone Control Application, exclusive only android. I have development additional feature and improve performance",
+			logo: "android-os.svg",
 			linkText: "View Project",
+			link: "https://play.google.com/store/apps/details/AiANG_DRONE?id=com.aiangdrone&hl=th",
+		},
+
+		{
+			title: "Weight Balance CMU",
+			description:
+				"Cross-platform mobile application, communicate to hardware-device by bluetooth. This application aim on help patient that have balancing problem",
+			logo: "flutter.svg",
+			linkText: "View Project",
+			link: "https://github.com/Thanatossan/Weight_balance_CMU",
+		},
+	],
+	sideProject: [
+		{
+			title: "Master Degree Thesis",
+			description:
+				"Automatic Exudate Segmentation of Diabetic Retinopathy in Digital Fundus Images, using image processing technique to capture and segment exudate (lipid-area) area from eye ball",
+			logo: "file-type-matlab.svg",
+			linkText: "View Thesis",
+			link: "https://cmudc.library.cmu.ac.th/frontend/Info/item/dc:181837",
+		},
+		{
+			title: "Winner of E-initiative Hackathon",
+			description:
+				"Winner of E-initiative Hackathon under topic `Change role, Change form, Make it easy with e-Initiative`",
+			logo: "vue.svg",
+			linkText: "View website",
+			link: "https://www.cpe.eng.cmu.ac.th/content-thaiview.php?view_id=HACKATHON-CPE2020",
+		},
+		{
+			title: "Skill Mapping for life long learning Website",
+			description:
+				"Career Advisory based on skilled of the user. Role as Project-Manager in this project",
+			logo: "react.svg",
+			linkText: "View Project",
+			link: "https://career-advisory.netlify.app/",
+		},
+
+		{
+			title: "BMEI Photometer Sensor Control Application",
+			description:
+				"Python Applcation control photometric device using PyQT as interface",
+			logo: "python.svg",
+			linkText: "",
 			link: "https://github.com",
 		},
 
 		{
-			title: "Project 3",
+			title: "3D Dental Manipulator Application",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			linkText: "View Project",
+				"Implement 3D visualize and manipulate model for 3Dprinting",
+			logo: "python.svg",
+			linkText: "",
 			link: "https://github.com",
 		},
 
 		{
-			title: "Project 4",
+			title: "JhanglekGames 30th live score summary Website",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"Implement summary website in 30th of JhanglekGames Website",
+			logo: "vue.svg",
 			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 5",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://thirsty-liskov-0f5b8b.netlify.app/",
 		},
 	],
 };

@@ -30,6 +30,9 @@
 .homepage-subtitle {
 	width: 85% !important;
 }
+.homepage-project-title {
+	width: 50% !important;
+}
 
 .homepage-first-area-right-side {
 	display: flex;
@@ -37,8 +40,12 @@
 }
 
 .homepage-image-container {
-	width: 370px;
+	width: 250px;
 	height: 370px;
+}
+.project-image-container {
+	width: 100px;
+	height: 340px;
 }
 
 .homepage-image-wrapper {

@@ -2,14 +2,14 @@ import React from "react";
 
 import Project from "./project";
 
-import INFO from "../../data/user";
+import user from "../../data/user";
 
 import "./styles/allProjects.css";
 
-const AllProjects = () => {
+const SubProject = () => {
 	return (
 		<div className="all-projects-container">
-			{INFO.projects.map((project, index) => (
+			{user.sideProject.map((project, index) => (
 				<div className="all-projects-project" key={index}>
 					<Project
 						img={project.img}
@@ -25,4 +25,4 @@ const AllProjects = () => {
 	);
 };
 
-export default AllProjects;
+export default SubProject;

@@ -8,6 +8,7 @@ import {
 	faGithub,
 	faStackOverflow,
 	faInstagram,
+	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -22,6 +23,7 @@ import SEO from "../data/seo";
 import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
+import SubProject from "../components/projects/subProject";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -80,11 +82,10 @@ const Homepage = () => {
 			</Helmet>
 
 			<div className="page-content">
-				<NavBar active="home" />
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>
-							<Logo width={logoSize} link={false} />
+							{/* <Logo width={logoSize} link={false} /> */}
 						</div>
 					</div>
 
@@ -115,16 +116,6 @@ const Homepage = () => {
 
 						<div className="homepage-socials">
 							<a
-								href={INFO.socials.twitter}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
 								href={INFO.socials.github}
 								target="_blank"
 								rel="noreferrer"
@@ -134,23 +125,14 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
+
 							<a
-								href={INFO.socials.stackoverflow}
+								href={INFO.socials.linkedin}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faStackOverflow}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faInstagram}
+									icon={faLinkedin}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -167,9 +149,16 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
+							<div className="subsubtitle">
+								Mobile Application Project
+							</div>
 							<AllProjects />
 						</div>
-
+						<div className="homepage-projects">
+							<div className="subsubtitle">Other Project</div>
+							<SubProject />
+						</div>
+						<div className="subsubtitle">Education</div>
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
 								{myArticles.map((article, index) => (
