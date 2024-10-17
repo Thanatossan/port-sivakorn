@@ -80,6 +80,22 @@ const INFO = {
 			linkText: "View Project",
 			link: "https://github.com/Thanatossan/Weight_balance_CMU",
 		},
+		{
+			title: "Weight Balance CMU",
+			description:
+				"Cross-platform mobile application, communicate to hardware-device by bluetooth. This application aim on help patient that have balancing problem",
+			logo: "flutter.svg",
+			linkText: "View Project",
+			link: "https://github.com/Thanatossan/Weight_balance_CMU",
+		},
+		{
+			title: "Bachelor Degree Final Project",
+			description:
+				"Hand-Signed Language translator, this also have machine learning model to classified and translate hand-signed language ",
+			logo: "flutter.svg",
+			linkText: "View Final Project",
+			link: "https://project.cpe.eng.cmu.ac.th/projectDetail/549",
+		},
 	],
 	sideProject: [
 		{
