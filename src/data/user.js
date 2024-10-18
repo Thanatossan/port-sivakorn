@@ -40,8 +40,8 @@ const INFO = {
 				"Learning Application that I have design structure using clean Architecture and Bloc State management.",
 			img: "flutter.svg",
 			logo: "flutter.svg",
-			linkText: "Currently testing phase",
-			link: "https://apps.apple.com/th/app/futureskill-upskill-now/id6468992311",
+			linkText: "View Project",
+			link: "https://play.google.com/store/apps/details?id=com.likemex.business.futureskill&hl=en",
 		},
 
 		{
@@ -72,14 +72,6 @@ const INFO = {
 			link: "https://play.google.com/store/apps/details/AiANG_DRONE?id=com.aiangdrone&hl=th",
 		},
 
-		{
-			title: "Weight Balance CMU",
-			description:
-				"Cross-platform mobile application, communicate to hardware-device by bluetooth. This application aim on help patient that have balancing problem",
-			logo: "flutter.svg",
-			linkText: "View Project",
-			link: "https://github.com/Thanatossan/Weight_balance_CMU",
-		},
 		{
 			title: "Weight Balance CMU",
 			description:
