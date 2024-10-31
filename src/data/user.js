@@ -59,8 +59,8 @@ const INFO = {
 			description:
 				"Drone Management Application using Stacked as State Management",
 			logo: "flutter.svg",
-			linkText: "Currently testing phase",
-			link: "https://github.com",
+			linkText: "View Project",
+			link: "https://play.google.com/store/apps/details?id=com.arv.dronevidya.mandala&hl=en",
 		},
 
 		{
