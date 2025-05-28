@@ -25,7 +25,7 @@ const Works = () => {
 							<div className="work-subtitle">
 								Mobile Developer ( Contract )
 							</div>
-							<div className="work-duration">2024- Present</div>
+							<div className="work-duration">2025- Present</div>
 						</div>
 						<div className="work">
 							<img
@@ -39,7 +39,7 @@ const Works = () => {
 							<div className="work-subtitle">
 								Mobile Developer ( Full-time )
 							</div>
-							<div className="work-duration">2024- Present</div>
+							<div className="work-duration">2024- 2025</div>
 						</div>
 
 						<div className="work">
