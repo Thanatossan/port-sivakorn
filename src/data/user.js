@@ -16,9 +16,9 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Flutter & Android Mobile Developer",
+		title: "Hi, I’m Sivakorn",
 		description:
-			"I am a frontend developer with expertise in Flutter and Android. I have experience in building mobile application in various knowledge field. Determined and focused to finish what I started. If anything is too challenging , I will collaborate with others to achieve that goal.",
+			"I am a software engineer with expertise in front-end development. I have experience in building mobile and web applications in various knowledge fields. Determined and focused to finish what I started. If anything is too challenging, I will collaborate with others to achieve that goal.",
 	},
 
 	about: {

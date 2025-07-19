@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import ReactGA from "react-ga4";
 
+import { ThemeProvider } from "./contexts/ThemeContext";
 import Homepage from "./pages/homepage";
 import About from "./pages/about";
 import Projects from "./pages/projects";
@@ -21,11 +22,19 @@ function App() {
 	}, []);
 
 	return (
-		<div className="App">
-			<Routes>
-				<Route path="/" element={<Homepage />} />
-			</Routes>
-		</div>
+		<ThemeProvider>
+			<div className="App">
+				<Routes>
+					<Route path="/" element={<Homepage />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/education" element={<Articles />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/article/:slug" element={<ReadArticle />} />
+					<Route path="*" element={<Notfound />} />
+				</Routes>
+			</div>
+		</ThemeProvider>
 	);
 }
 

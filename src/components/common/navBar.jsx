@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import ThemeToggle from "./themeToggle";
 import "./styles/navBar.css";
 
 const NavBar = (props) => {
@@ -21,15 +22,7 @@ const NavBar = (props) => {
 							>
 								<Link to="/">Home</Link>
 							</li>
-							<li
-								className={
-									active === "about"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/about">About</Link>
-							</li>
+
 							<li
 								className={
 									active === "projects"
@@ -58,6 +51,13 @@ const NavBar = (props) => {
 								<Link to="/contact">Contact</Link>
 							</li>
 						</ul>
+						
+					</div>
+					<div className="spacer">
+
+					</div>
+					<div className="nav-theme-toggle">
+							<ThemeToggle />
 					</div>
 				</nav>
 			</div>

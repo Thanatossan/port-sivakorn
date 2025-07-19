@@ -3,7 +3,9 @@
 .card {
 	mix-blend-mode: normal;
 	border-radius: 20px;
-	outline: 2px solid #f4f4f5;
+	outline: 2px solid var(--border-color);
+	background-color: var(--background-color);
+	transition: outline-color 0.3s ease, background-color 0.3s ease;
 }
 
 .card-container {
