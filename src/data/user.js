@@ -148,14 +148,6 @@ const INFO = {
 			link: "https://www.cpe.eng.cmu.ac.th/content-thaiview.php?view_id=HACKATHON-CPE2020",
 		},
 		{
-			title: "Skill Mapping for life long learning Website",
-			description:
-				"Career Advisory based on skilled of the user. Role as Project-Manager in this project",
-			logo: "react.svg",
-			linkText: "View Project",
-			link: "https://career-advisory.netlify.app/",
-		},
-		{
 			title: "BMEI Photometer Sensor Control Application",
 			description:
 				"Python Applcation control photometric device using PyQT as interface",
