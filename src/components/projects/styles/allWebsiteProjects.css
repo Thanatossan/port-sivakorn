@@ -1,0 +1,25 @@
+.all-website-projects-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 25px;
+	padding: 20px 0;
+}
+
+.all-website-projects-project {
+	display: flex;
+}
+
+@media (max-width: 768px) {
+	.all-website-projects-container {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		padding: 15px 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.all-website-projects-container {
+		grid-template-columns: 1fr;
+		gap: 15px;
+	}
+}

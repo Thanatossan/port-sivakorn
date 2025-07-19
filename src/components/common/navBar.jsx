@@ -7,6 +7,31 @@ import "./styles/navBar.css";
 const NavBar = (props) => {
 	const { active } = props;
 
+	const scrollToSection = (sectionId) => {
+		// If not on home page, navigate to home first
+		if (window.location.pathname !== '/') {
+			window.location.href = `/#${sectionId}`;
+			return;
+		}
+		
+		// Find and scroll to the element
+		const element = document.getElementById(sectionId);
+		if (element) {
+			element.scrollIntoView({ 
+				behavior: 'smooth',
+				block: 'start',
+				inline: 'nearest'
+			});
+		}
+	};
+
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+	};
+
 	return (
 		<React.Fragment>
 			<div className="nav-container">
@@ -20,7 +45,29 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/">Home</Link>
+								<Link to="/" onClick={scrollToTop}>Home</Link>
+							</li>
+
+							<li
+								className={
+									active === "websites"
+										? "nav-item active"
+										: "nav-item"
+								}
+								onClick={() => scrollToSection('website-projects')}
+							>
+								<span style={{ cursor: 'pointer' }}>Websites</span>
+							</li>
+
+							<li
+								className={
+									active === "mobile"
+										? "nav-item active"
+										: "nav-item"
+								}
+								onClick={() => scrollToSection('mobile-projects')}
+							>
+								<span style={{ cursor: 'pointer' }}>Mobile Apps</span>
 							</li>
 
 							<li
@@ -29,27 +76,22 @@ const NavBar = (props) => {
 										? "nav-item active"
 										: "nav-item"
 								}
+								onClick={() => scrollToSection('other-projects')}
 							>
-								<Link to="/projects">Projects</Link>
+								<span style={{ cursor: 'pointer' }}>Other Projects</span>
 							</li>
+
 							<li
 								className={
-									active === "articles"
+									active === "education"
 										? "nav-item active"
 										: "nav-item"
 								}
+								onClick={() => scrollToSection('education')}
 							>
-								<Link to="/education">Education</Link>
+								<span style={{ cursor: 'pointer' }}>Education</span>
 							</li>
-							<li
-								className={
-									active === "contact"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/contact">Contact</Link>
-							</li>
+
 						</ul>
 						
 					</div>

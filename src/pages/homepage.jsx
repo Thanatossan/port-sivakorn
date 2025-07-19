@@ -17,6 +17,7 @@ import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
+import AllWebsiteProjects from "../components/projects/allWebsiteProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -32,6 +33,20 @@ const Homepage = () => {
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
+		
+		// Check if there's a hash in the URL and scroll to it
+		const hash = window.location.hash.substring(1);
+		if (hash) {
+			setTimeout(() => {
+				const element = document.getElementById(hash);
+				if (element) {
+					element.scrollIntoView({ 
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+			}, 100);
+		}
 	}, []);
 
 	useEffect(() => {
@@ -148,18 +163,24 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
-
-						<div className="homepage-projects">
+						<div 
+						className="homepage-projects" id="website-projects">
+							<div className="subsubtitle">
+								Website Project
+							</div>
+							<AllWebsiteProjects />
+						</div>
+						<div className="homepage-projects" id="mobile-projects">
 							<div className="subsubtitle">
 								Mobile Application Project
 							</div>
 							<AllProjects />
 						</div>
-						<div className="homepage-projects">
+						<div className="homepage-projects" id="other-projects">
 							<div className="subsubtitle">Other Project</div>
 							<SubProject />
 						</div>
-						<div className="subsubtitle">Education</div>
+						<div className="subsubtitle" id="education">Education</div>
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
 								{myArticles.map((article, index) => (
