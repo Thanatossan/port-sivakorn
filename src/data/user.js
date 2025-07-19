@@ -182,6 +182,37 @@ const INFO = {
 			link: "https://thirsty-liskov-0f5b8b.netlify.app/",
 		},
 	],
+
+	activities: [
+		{
+			title: "Conference Speaker",
+			description: "Presented at tech conferences about mobile development and Flutter",
+			img: "activity/ac1.jpg",
+			date: "2024",
+			category: "Speaking"
+		},
+		{
+			title: "FutureSkill Development",
+			description: "Led development team for FutureSkill learning platform",
+			img: "activity/ac5.jpg",
+			date: "2023",
+			category: "Leadership"
+		},
+		{
+			title: "Hackathon Winner",
+			description: "Winner of E-initiative Hackathon - Change role, Change form, Make it easy with e-Initiative",
+			img: "activity/ac3.jpg",
+			date: "2020",
+			category: "Achievement"
+		},
+		{
+			title: "FutureSkill Development",
+			description: "Led development team for FutureSkill learning platform",
+			img: "activity/ac4.jpg",
+			date: "2023",
+			category: "Leadership"
+		}
+	],
 };
 
 export default INFO;

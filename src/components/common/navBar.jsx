@@ -56,29 +56,20 @@ const NavBar = (props) => {
 								}
 								onClick={() => scrollToSection('website-projects')}
 							>
-								<span style={{ cursor: 'pointer' }}>Websites</span>
+								<span style={{ cursor: 'pointer' }}>Project</span>
 							</li>
+
+							
 
 							<li
 								className={
-									active === "mobile"
+									active === "activities"
 										? "nav-item active"
 										: "nav-item"
 								}
-								onClick={() => scrollToSection('mobile-projects')}
+								onClick={() => scrollToSection('activities')}
 							>
-								<span style={{ cursor: 'pointer' }}>Mobile Apps</span>
-							</li>
-
-							<li
-								className={
-									active === "projects"
-										? "nav-item active"
-										: "nav-item"
-								}
-								onClick={() => scrollToSection('other-projects')}
-							>
-								<span style={{ cursor: 'pointer' }}>Other Projects</span>
+								<span style={{ cursor: 'pointer' }}>Activities</span>
 							</li>
 
 							<li

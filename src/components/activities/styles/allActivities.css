@@ -1,0 +1,25 @@
+.all-activities-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+	padding: 20px 0;
+}
+
+.all-activities-activity {
+	display: flex;
+}
+
+@media (max-width: 768px) {
+	.all-activities-container {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 15px;
+		padding: 15px 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.all-activities-container {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+}

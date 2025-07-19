@@ -1,0 +1,43 @@
+@import "../../../data/styles.css";
+
+.activity {
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+	height: 100%;
+	aspect-ratio: 1;
+}
+
+.activity:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.activity-container {
+	height: 100%;
+	width: 100%;
+}
+
+.activity-image {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.activity-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease-in-out;
+}
+
+.activity:hover .activity-image img {
+	transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+	.activity {
+		aspect-ratio: 4/3;
+	}
+}
