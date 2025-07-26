@@ -1,0 +1,154 @@
+/* Resume Page Styles */
+.resume-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	min-height: calc(100vh - 200px);
+}
+
+.resume-header {
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 20px 0;
+}
+
+.resume-title {
+	margin: 20px 0 10px 0;
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: var(--text-primary);
+}
+
+.resume-subtitle {
+	color: var(--text-secondary);
+	font-size: 1.1rem;
+	margin-bottom: 20px;
+	opacity: 0.8;
+}
+
+.download-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: var(--link-color);
+	color: white;
+	border: none;
+	padding: 12px 24px;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+	background: #0f8a7a;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.download-btn:active {
+	transform: translateY(0);
+}
+
+.resume-viewer {
+	background: var(--surface-color);
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	border: 1px solid var(--border-color);
+}
+
+.pdf-container {
+	position: relative;
+	width: 100%;
+	height: 80vh;
+	min-height: 600px;
+}
+
+.pdf-iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: white;
+}
+
+.pdf-fallback {
+	padding: 20px;
+	text-align: center;
+	background: var(--background-color);
+	border-top: 1px solid var(--border-color);
+	color: var(--text-secondary);
+}
+
+.fallback-link,
+.fallback-download {
+	color: var(--link-color);
+	text-decoration: none;
+	font-weight: 500;
+	cursor: pointer;
+	background: none;
+	border: none;
+	font-size: inherit;
+	padding: 0;
+}
+
+.fallback-link:hover,
+.fallback-download:hover {
+	text-decoration: underline;
+}
+
+.fallback-separator {
+	margin: 0 8px;
+	color: var(--text-secondary);
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .resume-viewer {
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .pdf-iframe {
+	background: #2a2a2a;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+	.resume-container {
+		padding: 15px;
+	}
+	
+	.resume-title {
+		font-size: 2rem;
+	}
+	
+	.pdf-container {
+		height: 70vh;
+		min-height: 500px;
+	}
+	
+	.download-btn {
+		padding: 10px 20px;
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.resume-container {
+		padding: 10px;
+	}
+	
+	.resume-title {
+		font-size: 1.75rem;
+	}
+	
+	.resume-subtitle {
+		font-size: 1rem;
+	}
+	
+	.pdf-container {
+		height: 60vh;
+		min-height: 400px;
+	}
+}
