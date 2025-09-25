@@ -18,7 +18,7 @@ const INFO = {
 	homepage: {
 		title: "Hi, I’m Sivakorn",
 		description:
-			"I am a software engineer with expertise in front-end development. I have experience in building mobile and web applications in various knowledge fields. Determined and focused to finish what I started. If anything is too challenging, I will collaborate with others to achieve that goal.",
+			"I am a software engineer with 5+ years worth of development, Proven experience in design, developement, management, testing, scalable architecture, and team leadership.",
 	},
 
 	about: {
